@@ -573,7 +573,7 @@ fn queue_shapes(
                 entity: current_batch_entity,
                 draw_function: draw_smud_shape,
                 pipeline: current_batch_pipeline,
-                sort_key: FloatOrd(z - f32::EPSILON),
+                sort_key: FloatOrd(z - 0.0001),
                 batch_range: Some(item_start..item_end),
             });
         }
